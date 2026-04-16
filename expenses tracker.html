@@ -8,15 +8,22 @@
   
   <script>
     console.log("Ready to build!");
-    const expense1={
-        name:"coffee",
-        amount: 3.50,
-        category: "Food & Drink"
-    };
-    console.log(expense1);
-    console.log("Expense Name: " + expense1.name);
-    console.log("Expense Amount: $" + expense1.amount.toFixed(2));
-    console.log("Expense Category: " + expense1.category);
+console.log("Ready to build!");
+
+// List of expenses (array of objects)
+const expenses = [
+  { name: "Coffee", amount: 3.5, category: "Food & Drink" },
+  { name: "Bus fare", amount: 2, category: "Transport" },
+  { name: "Internet", amount: 20, category: "Bills" },
+  { name: "Lunch", amount: 8, category: "Food & Drink" }
+];
+
+console.log(expenses);           // whole array
+console.log(expenses[0]);        // first expense
+console.log(expenses[0].name);   // "Coffee"
+console.log(expenses.length);    // 4 (how many items)
+console.log(expenses[2].name);   // "Lunch"
+console.log(expenses[3].amount); // 8
   </script>
 </body>
 </html>
