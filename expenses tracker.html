@@ -18,12 +18,9 @@ const expenses = [
   { name: "Lunch", amount: 8, category: "Food & Drink" }
 ];
 
-console.log(expenses);           // whole array
-console.log(expenses[0]);        // first expense
-console.log(expenses[0].name);   // "Coffee"
-console.log(expenses.length);    // 4 (how many items)
-console.log(expenses[2].name);   // "Lunch"
-console.log(expenses[3].amount); // 8
+expenses.forEach(expense => {console.log("the name is"+expense.name+", the amount is"+expense.amount);
+    
+});
   </script>
 </body>
 </html>
