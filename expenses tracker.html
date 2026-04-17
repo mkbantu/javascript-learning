@@ -18,9 +18,11 @@ const expenses = [
   { name: "Lunch", amount: 8, category: "Food & Drink" }
 ];
 
-expenses.forEach(expense => {console.log("the name is"+expense.name+", the amount is"+expense.amount);
-    
-});
+
+// Filter only Transport expenses
+const transportExpenses = expenses.filter(expense => expense.category === "Transport");
+console.log("Transport expenses:", transportExpenses);
+
   </script>
 </body>
 </html>
