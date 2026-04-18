@@ -21,7 +21,11 @@ const expenses = [
 
 // Filter only Transport expenses
 const names=expenses.map(expense => expense.name);
-console.log(names);
+for (const name of names) {
+  console.log(name);
+}
+const summing=expenses.reduce((total, expense) => total + expense.amount, 0);
+console.log("Total expenses: $" + summing);
 
   </script>
 </body>
