@@ -20,8 +20,8 @@ const expenses = [
 
 
 // Filter only Transport expenses
-const transportExpenses = expenses.filter(expense => expense.category === "Transport");
-console.log("Transport expenses:", transportExpenses);
+const names=expenses.map(expense => expense.name);
+console.log(names);
 
   </script>
 </body>
