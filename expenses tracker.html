@@ -26,6 +26,11 @@ for (const name of names) {
 }
 const summing=expenses.reduce((total, expense) => total + expense.amount, 0);
 console.log("Total expenses: $" + summing);
+const foodsum=expenses.filter(expense => expense.category === "Food & Drink")
+.reduce((total, expense) => total + expense.amount, 0);
+console.log("Food & Drink expenses: $" + foodsum);
+const { name, amount } = expenses[0];
+console.log(name,"costs $", amount);
 
   </script>
 </body>
