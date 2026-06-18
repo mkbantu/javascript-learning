@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            THe basics
+        </title>
+    </head>
+    <body>
+        
+
+        <script>
+        document.write("<h1> Welcome to this site </h1>");
+        document.write("<p>you wiil; write the salary in contract but will be reduced due to tax</p>");
+        document.write("<label>gross salary</label>  <input type=text id='input'>");
+        document.write("<button onclick='calcul()'>get</button>");
+        
+    
+        
+       function calcul(){
+        var currency=1000;
+        var tax=0.23;
+        var netSalary;
+        var grossSalary=document.getElementById("input").value;
+       
+        if ( grossSalary<60000){
+            tax=0;
+        }
+        else if(grossSalary<100000){
+            tax=0.1;
+        }
+        else{
+            tax=0.3;
+        }
+         netSalary=grossSalary-(grossSalary*tax);
+        alert("The salary  to receive is :"+netSalary);
+
+        
+
+       }
+    </script>
+    </body>
+
+</html>
