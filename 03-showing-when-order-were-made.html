@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                color: blue;
+               
+                
+            }
+            body{
+                background-color: rgb(53, 57, 56);
+               
+                items-align: center;
+            }
+            div{
+                width: 500px;
+                height: 500px;
+                background-color: aliceblue;
+                margin: 0 auto;
+            }
+        </style>
+        <title>
+            THe basics
+        </title>
+      
+    </head>
+    <body onload="display1()">
+        <div id="badie" >
+            <p id="p1"></p>
+            <p id="p2"></p>
+
+
+        </div>
+
+        
+
+        <script>
+        function display1(){
+        document.getElementById("p1").innerHTML="<h1> Welcome to this site </h1>";
+        let element1="<input type=date id='input1' onkeydown='texteventfuction()'>";
+        let element2="<input type=text id='input2' onkeydown='texteventfuction()'>";
+        let element3="<button onclick='showorder()'>get</button>";
+        document.getElementById("p2").innerHTML = `${element1} ${element2} ${element3}`;
+    
+        }
+        
+      function texteventfuction(){
+       if (event.key=="Enter"){
+        showorder();
+        }
+       }
+       function showorder(){
+        let order={
+            name: document.getElementById("input2").value,
+            date: document.getElementById("input1").value
+        };
+
+        let newP = document.createElement("p");
+        newP.innerHTML = `<h1>the order was made by ${order.name} on ${order.date}</h1>`;
+        document.getElementById("badie").appendChild(newP);
+       }
+
+        </script>
+    </body>
+</html>
+        
+      

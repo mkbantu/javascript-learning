@@ -36,11 +36,15 @@
         function display1(){
         document.getElementById("p1").innerHTML="<h1> Welcome to this site </h1>";
         document.getElementById("p2").innerHTML="<p>you wiil; write the salary in contract but will be reduced due to tax</p>";
-        document.getElementById("p3").innerHTML="<label>gross salary</label>  <input type=text id='input'>";
+        document.getElementById("p3").innerHTML="<label>gross salary</label>  <input type=text id='input' onkeydown='texteventfuction()'>";
         document.getElementById("p4").innerHTML="<button onclick='calcul()'>get</button>";
         }
         
-    
+      function texteventfuction(){
+       if (event.key=="Enter"){
+        calcul();
+        }
+       }
         
        function calcul(){
         var currency=1000;
