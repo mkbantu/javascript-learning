@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JSON and AJAX</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>JSON and AJAX Example</h1>
+            <button class="btn" id="loadDataBtn">Load Data</button>
+            <div id="jsonDisplay"></div>
+        </div>
+        <script>
+            document.getElementById("loadDataBtn").addEventListener("click", loaddata());
+            let students;
+            let loadDataBtn=document.getElementById("loadDataBtn");
+
+            function loaddata(){
+
+                fetch("student.json")
+                .then(response=>response.json())
+                .then(data=>{
+                    students=data;
+                    showstudents(students);
+                
+                })
+            
+            }
+
+            
+            
+            function showstudents(stud){
+                let output="<ul>";
+
+              for(let i=0;i<stud.length;i++){
+                output+="<li>"+stud[i].name+" - "+stud[i].role;
+                    
+                    for(let j=0;j<stud[i].skills.length;j++){
+                        output+=" Has these skills: "+stud[i].skills[j]+", ";
+                    }
+                    
+                    "</li>";
+              
+              
+                }
+                output+="</ul>";
+              document.getElementById("jsonDisplay").innerHTML=output;
+            }
+               
+        </script>
+    </body>

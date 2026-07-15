@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Alice Johnson",
+    "role": "Frontend Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React"]
+  },
+  {
+    "name": "Bob Smith",
+    "role": "Backend Developer",
+    "skills": ["Node.js", "Express", "MongoDB"]
+  },
+  {
+    "name": "Carol Davis",
+    "role": "UI/UX Designer",
+    "skills": ["Figma", "Adobe XD", "Photoshop"]
+  },
+  {
+    "name": "David Brown",
+    "role": "Full Stack Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "Node.js", "MySQL"]
+  },
+  {
+    "name": "Emma Wilson",
+    "role": "Mobile Developer",
+    "skills": ["Flutter", "Dart", "Firebase"]
+  },
+  {
+    "name": "Frank Miller",
+    "role": "Data Analyst",
+    "skills": ["Python", "SQL", "Power BI", "Excel"]
+  },
+  {
+    "name": "Grace Taylor",
+    "role": "DevOps Engineer",
+    "skills": ["Docker", "Kubernetes", "AWS", "Linux"]
+  },
+  {
+    "name": "Henry Thomas",
+    "role": "Cybersecurity Analyst",
+    "skills": ["Network Security", "Penetration Testing", "Wireshark"]
+  },
+  {
+    "name": "Isabella Moore",
+    "role": "Machine Learning Engineer",
+    "skills": ["Python", "TensorFlow", "Pandas", "Scikit-learn"]
+  },
+  {
+    "name": "Jack Anderson",
+    "role": "Database Administrator",
+    "skills": ["MySQL", "PostgreSQL", "Oracle", "SQL Server"]
+  }
+]
