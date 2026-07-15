@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Clock digital</title>
+       
+    </head>
+    <body>
+        <div class="container">
+            <h1>Digital Clock</h1>
+            <p id="clock"></p>
+        </div>
+        <script>
+        var date = new Date();
+        document.getElementById("clock").innerHTML = date.toLocaleTimeString();
+        </script>
+    </body>
+</html>
